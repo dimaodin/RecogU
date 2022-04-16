@@ -8,6 +8,7 @@
     padding: 1rem;
     z-index: 1000;
     width: 100%;
+    letter-spacing: -1px;
     height: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .1);
@@ -49,7 +50,6 @@
     top: .25rem;
     position: relative;
     font-size: 1.5rem;
-
 }
 
 .side .bottom a:nth-child(n+2) {
@@ -82,14 +82,14 @@
     }
 
     .side .top h1 {
-        font-size: 1.25rem;
-        line-height: 1.25rem;
-
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
     .side .top span {
         font-size: 1rem;
-        width: 50%;
+        width: 30%;
         line-height: 1.25rem;
+        padding-left: 1rem;
     }
     .side .bottom {
         top: 0;
@@ -97,6 +97,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 1.25rem;
     }
     .side .bottom a:nth-child(n+2) {
         margin-left: 0;

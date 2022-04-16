@@ -40,12 +40,12 @@
     margin-bottom: 1rem;
 }
 
-.webcamOn video {
+.webcamWrap video {
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.webcamOn canvas {
+.webcamWrap canvas {
     position: absolute;
 }
 
@@ -55,6 +55,7 @@
     height: 100px;
     width: 30rem;
     text-align: center;
+    letter-spacing: -1px;
     backdrop-filter: blur(20px);
     display: flex;
     justify-content: center;
@@ -88,10 +89,9 @@
 }
 
 .centerDiv {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .button {
@@ -144,7 +144,7 @@
 @media (max-width:801px) {
     .container {
         width: 100%;
-        height: 40rem;
+        height: 50rem;
     }
 
     .webcamOn {
@@ -153,17 +153,12 @@
 
     .contentWrap {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content:center;
         align-items: center;
     }
-
-    .webcamOn video {
-        width: 80vw;
-        height: auto;
-    }
-
-    .webcamOn canvas {
-        width: 80vw;
+    
+    .webcamWrap {
+        zoom: 0.6;
     }
 
     .diagnosis {
@@ -172,6 +167,6 @@
         padding: 6rem 3rem;
     }
     .diagnosisOff {
-        padding: 6rem 0;
+        padding: 8rem 0;
     }
 }
