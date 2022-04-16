@@ -1,0 +1,177 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backgroundTransition {
+    -webkit-transition: background-color 800ms linear;
+    -ms-transition: background-color 800ms linear;
+    transition: background-color 800ms linear;
+}
+
+.webcamOn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contentWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.webcamWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.webcamOn video {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.webcamOn canvas {
+    position: absolute;
+}
+
+.diagnosis {
+    background-color: rgba(45, 45, 45, 0.25);
+    border-radius: 10px;
+    height: 100px;
+    width: 30rem;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.diagnosis span {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.diagnosisOff {
+    margin-top: 1rem;
+}
+
+.diagnosisOff svg{
+    color: rgb(233, 233, 233);
+}
+
+.diagnosisOff span {
+    z-index: 99999;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.centerDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 40px;
+    margin: 8px 0 12px;
+    padding: 8px 48px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 180px;
+    white-space: nowrap;
+    outline: none;
+    place-content: center;
+    place-items: center;
+    -webkit-transition: 300ms all ease-in-out;
+    transition: 300ms all ease-in-out;
+    text-transform: uppercase;
+}
+
+.customButton {
+    top: 0;
+    margin-top: 2rem;
+}
+
+.customButton button {
+    background-image: var(--purple-gradient);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    filter: brightness(50%);
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:801px) {
+    .container {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .webcamOn {
+        margin-bottom: 2rem;
+    }   
+
+    .contentWrap {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .webcamOn video {
+        width: 80vw;
+        height: auto;
+    }
+
+    .webcamOn canvas {
+        width: 80vw;
+    }
+
+    .diagnosis {
+        height: 25vh;
+        width: 85vw;
+        padding: 6rem 3rem;
+    }
+    .diagnosisOff {
+        padding: 6rem 0;
+    }
+}
