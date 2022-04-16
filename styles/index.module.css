@@ -124,7 +124,7 @@
 
 .customButton button {
     background-image: var(--purple-gradient);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 8px rgb(202, 54, 104);
     color: #fff;
     letter-spacing: 1px;
 }

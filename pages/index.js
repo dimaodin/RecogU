@@ -101,7 +101,7 @@ export default function Index() {
 
           const box = resizedDetections.detection.box;
           const drawBox = new faceapi.draw.DrawBox(box, {
-            boxColor: "#9900F0",
+            boxColor: "rgb(202, 54, 104)",
             label:
               " 🤖 " +
               Math.round(resizedDetections.age) +
@@ -141,17 +141,17 @@ export default function Index() {
     let msg = "";
     if (isMale) {
       if (data.age <= 4) {
-        msg = isMale ? "a baby boy," : "a baby girl,";
+        msg = isMale ? "a little baby boy." : "a little baby girl.";
       } else if (data.age > 4 && data.age < 12) {
-        msg = isMale ? "a little boy child," : "a little girl child,";
+        msg = isMale ? "a boy child." : "a girl child.";
       } else if (data.age > 12 && data.age < 18) {
-        msg = isMale ? "a boy," : "a girl,";
+        msg = isMale ? "a boy." : "a girl.";
       } else if (data.age > 18 && data.age < 28) {
-        msg = isMale ? "a young man," : "a young woman,";
+        msg = isMale ? "a young man." : "a young woman.";
       } else if (data.age > 28 && data.age < 55) {
-        msg = isMale ? "a man," : "a woman,";
+        msg = isMale ? "a man." : "a woman.";
       } else if (data.age > 55) {
-        msg = isMale ? "an old gentleman," : "an old lady,";
+        msg = isMale ? "an old gentleman." : "an old lady.";
       }
 
       msg = `You look like ${msg}`;
@@ -179,25 +179,25 @@ export default function Index() {
       "There is no definite expression that is see.<br/>Are you right there? 👻";
     setCurrentBackground(0);
     if (maxProp === "angry") {
-      expression = "that feels angry.<br/>Let's fight! 😡";
+      expression = "I see you feel angry.<br/>Let's fight! 😡";
       setCurrentBackground(1);
     } else if (maxProp === "disgusted") {
-      expression = "that is disgusted.<br/>What did you see? 🤮";
+      expression = "I see you feel disgusted.<br/>What did you see? 🤮";
       setCurrentBackground(2);
     } else if (maxProp === "fearful") {
-      expression = "that feels scared, why? i'm starting to feel it too 😱";
+      expression = "I see you feel scared, why? i'm starting to feel it too 😱";
       setCurrentBackground(3);
     } else if (maxProp === "happy") {
-      expression = "that feels happy! I'm glad to see that. 😀";
+      expression = "I see you feel happy! I'm so glad 😀";
       setCurrentBackground(4);
     } else if (maxProp === "neutral") {
-      expression = "that looks neutral. 😶";
+      expression = "I see you feel neutral. 😶";
       setCurrentBackground(5);
     } else if (maxProp === "sad") {
-      expression = "that feels sad, cheer up please 😞";
+      expression = "I see you feel, cheer up please 😞";
       setCurrentBackground(6);
     } else if (maxProp === "surprised") {
-      expression = "that is surprised, what's so shocking? 😯";
+      expression = "I see you feel surprised, what's so shocking? 😯";
       setCurrentBackground(7);
     }
 

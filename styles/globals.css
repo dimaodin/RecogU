@@ -1,6 +1,7 @@
 :root {
-    --purple-gradient: linear-gradient(to right top, #9900f0, #a020f0, #a731f0, #ae3ff0, #b44bf0);
+    --purple-gradient: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
 }
+
 
 html, body {
     padding: 0;
