@@ -166,8 +166,7 @@
     }
 
     .webcamWrap canvas {
-        width: 85%;
-        height: 85%;
+        zoom: .9;
     }
 
     .diagnosis {
