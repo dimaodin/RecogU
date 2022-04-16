@@ -118,7 +118,6 @@ export default function Index() {
               canvasRef.current,
               resizedDetections
             );
-          // canvasRef && canvasRef.current && faceapi.draw.drawFaceExpressions(canvasRef.current, resizedDetections);
         }
       }
     }, 1000);

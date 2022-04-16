@@ -156,9 +156,10 @@
         justify-content:center;
         align-items: center;
     }
-    
+
     .webcamWrap {
-        transform: scale(0.65);
+
+        height: 70vh;
     }
 
     .diagnosis {
