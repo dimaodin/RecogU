@@ -185,16 +185,17 @@ export default function Index() {
       expression = "I see you feel disgusted.<br/>What did you see? 🤮";
       setCurrentBackground(2);
     } else if (maxProp === "fearful") {
-      expression = "I see you feel scared, why? i'm starting to feel it too 😱";
+      expression =
+        "I see you feel scared, why?<br/>I'm starting to feel it too 😱";
       setCurrentBackground(3);
     } else if (maxProp === "happy") {
-      expression = "I see you feel happy! I'm so glad 😀";
+      expression = "I see you feel happy!<br/> I'm so glad 😀";
       setCurrentBackground(4);
     } else if (maxProp === "neutral") {
-      expression = "I see you feel neutral. 😶";
+      expression = "I see you feel neutral, not sure what to do. 😶 ";
       setCurrentBackground(5);
     } else if (maxProp === "sad") {
-      expression = "I see you feel, cheer up please 😞";
+      expression = "I see you feel sad, cheer up please 😞";
       setCurrentBackground(6);
     } else if (maxProp === "surprised") {
       expression = "I see you feel surprised, what's so shocking? 😯";
