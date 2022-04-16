@@ -160,7 +160,7 @@
     }
 
     .webcamWrap {
-        zoom: 0.5;
+        zoom: 1;
     }
 
     .webcamWrap video {
@@ -169,7 +169,6 @@
 
     .webcamWrap canvas {
         position: absolute;
-
     }
 
     .diagnosis {
