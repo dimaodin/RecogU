@@ -165,6 +165,10 @@
         align-items: center;
     }
 
+    .webcamWrap canvas {
+        width: 70%;
+    }
+
     .diagnosis {
         height: 30vh;
         width: 85vw;
