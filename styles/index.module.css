@@ -160,15 +160,9 @@
     }
 
     .webcamWrap {
-        zoom: 1;
-    }
-
-    .webcamWrap video {
-        border-radius: 25px;
-    }
-
-    .webcamWrap canvas {
-        position: absolute;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .diagnosis {
