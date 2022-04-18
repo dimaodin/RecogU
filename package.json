@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "canvas-confetti": "^1.5.1",
     "face-api.js": "^0.22.2",
     "next": "12.1.5",
     "nprogress": "^0.2.0",

@@ -1,8 +1,8 @@
 import * as faceapi from "face-api.js";
 import NProgress from "nprogress";
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import Sidebar from "../components/sidebar";
-import BgEffect from "../components/bgEffect";
+import confetti from "canvas-confetti";
+import Navbar from "../components/navbar";
 import Button from "../components/button";
 import Styles from "../styles/index.module.css";
 import randomEmoji from "../utils/randomEmoji";
@@ -46,6 +46,11 @@ export default function Index() {
   function startVideo() {
     NProgress.start();
     setCaptureVideo(true);
+    confetti({
+      particleCount: 50,
+      startVelocity: 30,
+      spread: 360,
+    });
 
     navigator.mediaDevices
       .getUserMedia({ video: { width: 300 } })
@@ -232,8 +237,7 @@ export default function Index() {
 
   return (
     <Fragment>
-      <BgEffect captureVideo={captureVideo} />
-      <Sidebar />
+      <Navbar />
       <section
         className={`${Styles.container} ${Styles.backgroundTransition}`}
         style={{ backgroundColor: backgrounds[currentBackground] }}
@@ -249,7 +253,7 @@ export default function Index() {
         ) : (
           <div className={Styles.customButton} onClick={() => startVideo()}>
             <Button
-              text={"Activate expression detector"}
+              text={"Start mood diagnosis 🧬"}
               url={""}
               isNewTab={false}
               Svg=""
@@ -302,7 +306,7 @@ export default function Index() {
               <br />
               Connect your webcam and
               <br />
-              click the button above to start {emoji}
+              click the button above to start.
             </span>
           </div>
         )}

@@ -35,6 +35,9 @@
     padding: 0;
     line-height: 1.75rem;
     color: #333333;
+    background: var(--purple-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .side .top span {
@@ -87,7 +90,6 @@
     }
     .side .top span {
         font-size: 1rem;
-        width: 30%;
         line-height: 1.25rem;
         padding-left: 1rem;
     }
